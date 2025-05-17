@@ -38,6 +38,7 @@ num oddSum = 0;
   else{
     print("No is Positive");
   }
+
 // Q6. Write a Dart program to calculate the factorial of a given number using a while loop.
 
 int factorial = 1;
@@ -47,7 +48,63 @@ factorial = factorial*i;
 }
   print(factorial);
 
+// Q8. Implement Dart code to print the first 10 natural numbers in reverse order using a while loop.
+
+  int i = 10;
+  while (i >= 1) {
+  print("Natural No is ${i}");
+    i--;
+  }
+
+// Q9.  Implement Dart code to print the squares of numbers from 1 to 5 using a do-while loop.
+  int i = 1;
+ do{
+  print(i*i);
+ }
+  while (i >= 5) {
+    i++;
+ }
+
+// Q10. Create Dart code to calculate the average of numbers in a list using a do-while loop.
 
 
+List<int> numbersList=[2,4,6,8,9,1,3];
+double average = 0;
+int i = 0;
+do {
+average += numbersList[i];
+ 
+if(i==numbersList.length-1){
+  average = average/numbersList.length;
+  print("The average of given kist is $average");
+};
+i++;
+}
+while(i<numbersList.length);
+
+// Q12. Write a Dart program to print even numbers from 1 to 20 using a do-while loop
+
+int i = 1;
+do {
+if(i%2==0){
+  print("$i is even no");
+};
+i++;
+}
+while(i<=20);
+
+
+// Q13. Write a program that prints the Fibonacci sequence up to a given number using a for loop.
+
+List sequence =[];
+ for(var i=0;i<=10;i++){
+   if(sequence.length<2){
+     sequence.add(i);
+   }
+   else{
+     sequence.add(sequence[sequence.length-1]+sequence[sequence.length-2]);
+   };
+   print(sequence);
+ }
 
 }
